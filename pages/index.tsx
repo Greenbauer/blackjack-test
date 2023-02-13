@@ -4,7 +4,7 @@ import { drawCards, getDeckId } from '@/utils';
 import { useEffect, useState } from 'react'
 import HandView from '../components/HandView'
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const deckId = await getDeckId()
 
   return {
